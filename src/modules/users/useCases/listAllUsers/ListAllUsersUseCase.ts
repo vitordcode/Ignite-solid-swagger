@@ -19,6 +19,7 @@ class ListAllUsersUseCase {
       throw new Error("User not found");
     }
 
+
     if (!user.admin) {
       throw new Error("Access denied");
     }
